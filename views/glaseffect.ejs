@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mapsoftheworld</title>
+    <link rel="stylesheet"  href="/stylesheets/glasseffect.css" /> 
+           
+  </head>
+  <body>
+    
+    <div class="nav" id="blur">
+        <ul>
+          <li><a class="first">Startseite</a></li>
+          <li><a class="first">Europa</a></li>
+          <li><a>GDP</a></li>
+          <li><a class="last">HDI</a></li>
+          <li><a class="last">Information</a></li>
+        </ul>
+      </div>
+      
+      <div id="body">
+      
+        
+        
+      </div>
+      
+      
+      
+      <script src="//use.typekit.net/wcp4cso.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script>
+    
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+    
+  </body>
+  
+</html>
